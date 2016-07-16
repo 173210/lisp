@@ -1,0 +1,14 @@
+(+ 2 2) => 5
+(eq (+ 2 2) 5) => T
+(atom 2) => T
+(atom (cons 2 2)) => nil
+(eval (quote (+ 2 2))) => 5
+(length ()) => 0
+(car (cons 2 5)) => 2
+(cdr (cons 2 5)) => 5
+
+(if () 4 5) => 5
+(quote (+ 2 2)) => (+ 2 2)
+
+(define plus2 (lambda (x) (+ x 2))) => nil
+(plus2 2) => 5
